@@ -1,0 +1,22 @@
+/* name: zakir
+uin: 2510027
+branch: civil*/
+#include <stdio.h>
+
+int factorial(int num)
+{
+    if (num == 0 || num == 1) // Error 1: Changed '=' to '==' for comparison
+    {
+        return 1;
+    }
+    else
+    {
+        return num * factorial(num - 1);
+    }
+}
+
+int main()
+{ // Error 2: Added opening curly brace for main function
+    printf("Factorial of 5 is %d\n", factorial(5));
+    return 0;
+}
